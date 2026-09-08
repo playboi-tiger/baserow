@@ -310,6 +310,7 @@ services:
       PRIVATE_BACKEND_URL: ${PRIVATE_BACKEND_URL:-http://backend:8000}
       BASEROW_PUBLIC_URL: ${BASEROW_PUBLIC_URL:-}
       MEDIA_URL: ${MEDIA_URL:-}
+      
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - media:/baserow/media
